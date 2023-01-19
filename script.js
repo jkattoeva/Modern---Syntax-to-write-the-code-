@@ -6,10 +6,10 @@
 for (var x = 0; x < 3; x++) {
   setTimeout(() => {
     console.log(x);
-  }, 1000);
+  }, 1000); // 3 3
 }
 for (let y = 0; y < 3; y++) {
   setTimeout(() => {
     console.log(y);
-  }, 2000);
+  }, 2000); // 0 1 2
 }
