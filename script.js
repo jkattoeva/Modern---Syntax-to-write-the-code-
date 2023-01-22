@@ -37,12 +37,102 @@
 
 // function with spread operator
 // total add x / y
-function addAll(...numbers) {
-  let total = 0;
-  for (let num of numbers) {
-    total += num;
-    console.log(num, total);
-  }
-  return total;
+// function addAll(...numbers) {
+//   let total = 0;
+//   for (let num of numbers) {
+//     total += num;
+//     console.log(num, total);
+//   }
+//   return total;
+// }
+// addAll(6, 5, 4);
+
+// Exercise
+// add some eg with spread operator
+
+// var fruit = ["Banana", "Pineapple", "Apple"];
+// var berries = ["grape", "strawberry", "watermelon", "raspberry"];
+// var fruitJuiceFlavor = [...fruit, ...berries];
+// console.log(fruitJuiceFlavor);
+
+// var vegetables = ["celery", "potato", "onion"];
+// var meat = ["chicken", "beef", "pork"];
+// var spices = ["garlic", "cimmin", "peper"];
+// var ingredientForDinner = [...vegetables, ...meat, ...spices];
+// console.log(ingredientForDinner);
+
+// Spread operator with functions
+// function manyArgs(...args) {
+//   console.log(args);
+// }
+// manyArgs(1, 2, 3, 1, 2, 3); // [1,2,3,1,2,3]
+
+// function makeAClass(newPerson, ...students) {
+//   console.log(`${newPerson} say hi to ${students.join(" and ")}`);
+// }
+// makeAClass("Janetta", "Sam", "Bob", "Sally"); // Janetta say hi to Samand Bob and Sally
+
+// Shorthand methods to write code with a lot of ways
+
+// // first eg
+// var x = 5;
+// var y = 6;
+// if (x < y) {
+//   console.log("That's true");
+// }
+// // Shorter eg
+// var a = 5,
+//   b = 6;
+// if (a < 6) console.log("That's True");
+
+// Arrow functions
+// firat eg
+// function double(x) {
+//   return x * 2;
+// }
+// //second eg
+// var double = function (x) {
+//   return x * 2;
+// };
+// // third eg
+// var double = (x) => {
+//   return x * 2;
+// };
+// // fourth eg
+// var double = (x) => x * 2;
+
+// console.log(double(5));
+
+// Arrow Example
+// var names = ["Zintis May", "Will Smith", "Jackie Chan"];
+// var lastName = names.map((n) => n.split(" ").pop());
+// console.log(lastName); // thats show us only surname
+
+// // second eg
+// var testScores = [12, 5, 45, 55, 88, 66, 78, 100];
+// var passingScores = testScores.filter((s) => s < 50);
+// console.log(passingScores); //12,5,45
+// // third eg
+// var combineWords = (...words) => words.join(" "); // thats method add space into this words
+// console.log(combineWords("Hello", "my", "name", "is", "Janeta"));
+
+// declaration funcution
+// isWasTheBest("James Smith");
+// function isWasTheBest(name) {
+//   console.log(`${name} is was the famous man`);
+// }
+// // expression function
+// var isTheBest = function (name) {
+//   console.log(`${name}  is the famous man`);
+// };
+// isTheBest("Will Smith");
+
+var fruit = "apple";
+function sayFruit() {
+  console.log(this.fruit);
 }
-addAll(6, 5, 4);
+var obj = {
+  fruit: "banana",
+  sayFruit: sayFruit,
+};
+obj.sayFruit();
