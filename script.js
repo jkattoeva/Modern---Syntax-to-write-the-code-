@@ -145,3 +145,26 @@
 //   yellFruit: yellFruit,
 // };
 // obj2.yellFruit(); // array function locked 'this' method
+
+// AND / OR
+// var t = true;
+// var p = false;
+// if (p && t) {
+//   // false
+//   console.log("is true");
+// } else if (t || p) {
+//   console.log("thats true"); // true
+// }
+// var qqq = true && 1 && "hey" && {} && []; // []
+// var qqq = true && 0 && "hey" && {} && []; // 0
+// var qqq = true && 5 && "" && {} && []; //nothing
+
+// console.log(qqq);
+
+// var yyy = true || 1 || "word" || {} || []; // true
+// var yyy = false || 1 || "word" || {} || []; // 1
+// var yyy = false || 0 || "word" || {} || []; // word
+// var yyy = false || 1 || "" || {} || []; // 1
+// var yyy = 0 || null || false || "" || "lastValue"; // lastValue
+
+// console.log(yyy);
