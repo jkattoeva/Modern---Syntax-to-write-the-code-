@@ -243,3 +243,16 @@
 // };
 // console.log(person?.status?.school?.name);
 // console.log(person);
+
+//Switch
+var x = 1; // Switch statements is a fundamental JS thats like if statement
+switch (x) {
+  case 1:
+    console.log("ONE");
+    break;
+  case 2:
+    console.log("TWO");
+    break;
+  default:
+    console.log("default");
+}
