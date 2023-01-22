@@ -168,3 +168,20 @@
 // var yyy = 0 || null || false || "" || "lastValue"; // lastValue
 
 // console.log(yyy);
+
+// function wholeName(first, middle, last) {
+//   if (first && middle && last) {
+//     return `${first} ${middle} ${last}`;
+//   }
+//   return "ERROR";
+// }
+// console.log(wholeName("Janetta", "Bokonbaevna", "Kattoeva"));
+
+// var a = false || 0 || "" || null; // null
+// console.log(a);
+
+// var something = 1 && true && []; //[]
+// var somethingElse = 0 && false && ""; //0
+// var nothing = 1 && "banana" && null; // null
+
+// console.log(nothing);
