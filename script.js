@@ -127,21 +127,21 @@
 // };
 // isTheBest("Will Smith");
 
-var fruit = "apple";
-function sayFruit() {
-  console.log(this.fruit);
-}
-var obj = {
-  fruit: "banana",
-  sayFruit: sayFruit,
-};
-obj.sayFruit(); // this method work to deafault function
+// var fruit = "apple";
+// function sayFruit() {
+//   console.log(this.fruit);
+// }
+// var obj = {
+//   fruit: "banana",
+//   sayFruit: sayFruit,
+// };
+// obj.sayFruit(); // this method work to deafault function
 
-var yellFruit = () => {
-  console.log(this.fruit);
-};
-var obj2 = {
-  fruit: "peach",
-  yellFruit: yellFruit,
-};
-obj2.yellFruit(); // array function locked 'this' method
+// var yellFruit = () => {
+//   console.log(this.fruit);
+// };
+// var obj2 = {
+//   fruit: "peach",
+//   yellFruit: yellFruit,
+// };
+// obj2.yellFruit(); // array function locked 'this' method
