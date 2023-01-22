@@ -135,4 +135,13 @@ var obj = {
   fruit: "banana",
   sayFruit: sayFruit,
 };
-obj.sayFruit();
+obj.sayFruit(); // this method work to deafault function
+
+var yellFruit = () => {
+  console.log(this.fruit);
+};
+var obj2 = {
+  fruit: "peach",
+  yellFruit: yellFruit,
+};
+obj2.yellFruit(); // array function locked 'this' method
