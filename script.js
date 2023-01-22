@@ -185,3 +185,34 @@
 // var nothing = 1 && "banana" && null; // null
 
 // console.log(nothing);
+
+// // Object property assignment
+// var money = 10;
+// var phone = "android";
+// // modern method to declare an obj
+// var whatIsInMyPocket = {
+//   money,
+//   phone,
+// };
+// console.log(whatIsInMyPocket);
+
+// // old method to declare an obj
+// var otherPocket = {
+//   money: money,
+//   phone: phone,
+// };
+// console.log(otherPocket);
+
+// Destructuring objects
+
+// var obj = {
+//   height: 10,
+//   width: 5,
+//   shape: "square",
+// };
+// // Destructuring
+// var { height, width, shape } = obj;
+// console.log(height, width, shape);
+// // Rename, default value
+// var { height: firstHeight, width = "none", shape = "circle" } = obj;
+// console.log(obj); // unclear eg it doesnt work
