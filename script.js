@@ -217,12 +217,29 @@
 // var { height: firstHeight, width = "none", shape = "circle" } = obj;
 // console.log(obj); // unclear eg it doesnt work
 
-// Destructuring Arrays
-var arr = ["Janetta", "Kattoeva", "Sandy"];
-//old way
-var firstPlace = arr[0];
-var secondPlace = arr[1];
-var thirdPlace = arr[2];
-// Modern destructuring
-var [firstPlace, secondPlace, thirdPlace] = arr;
-console.log(firstPlace, secondPlace, thirdPlace);
+// // Destructuring Arrays
+// var arr = ["Janetta", "Kattoeva", "Sandy"];
+// //old way
+// var firstPlace = arr[0];
+// var secondPlace = arr[1];
+// var thirdPlace = arr[2];
+// // Modern destructuring
+// var [firstPlace, secondPlace, thirdPlace] = arr;
+// console.log(firstPlace, secondPlace, thirdPlace);
+
+// Optional Chaining Operator
+// var person = {
+//   name: {
+//     first: "Zintis",
+//     last: "May",
+//   },
+//   job: {
+//     role: "teacher",
+//     school: {
+//       name: "DevX",
+//       boss: "Askar",
+//     },
+//   },
+// };
+// console.log(person?.status?.school?.name);
+// console.log(person);
